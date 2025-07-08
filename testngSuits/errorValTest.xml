@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+    <groups>
+        <run>
+            <include name="Errorhandling"/>
+        </run>
+    </groups>
+    <test verbose="2" preserve-order="true" name="C:/Users/10821737/practice/ecom" >
+        <classes>
+            <class name="tests.LoginTest"/>
+            <class name="tests.ProductCatalogTest"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="errorVal" >
+        <classes>
+            <class name="tests.ErrorValidation"/>
+        </classes>
+    </test>
+</suite>

@@ -29,6 +29,7 @@ public class LandingPage extends PageObjectUtils {
 
     public void login(String email,String password)
     {
+        waitUntilElementClickable(btnLogin);
         txtEmail.sendKeys(email);
         txtPassword.sendKeys(password);
         clickElement(btnLogin);
@@ -38,7 +39,7 @@ public class LandingPage extends PageObjectUtils {
     {
         visibilityOfElement(errMessage);
         System.out.println("Error message ====================");
-        System.out.println("Error message"+errMessage.getText());
+        System.out.println("Error message   => "+errMessage.getText());
         return errMessage.getText();
     }
 }
